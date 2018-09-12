@@ -1,6 +1,6 @@
 # Network Programming
 
-Exams of Network Programming Course
+Network Programming Course
 
 # LICENSE
 MIT License
