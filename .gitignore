@@ -1,0 +1,18 @@
+# Hidden
+.*
+!.gitignore
+
+# Pdf files
+*.pdf
+
+# Compiled class files
+*class
+
+# Jar files
+*.jar
+
+# Unused jsp files
+Thema1/WebContent/file_list_users.jsp
+Thema1/WebContent/Properties_add.jsp
+Thema1/WebContent/Properties_find.jsp
+Thema1/WebContent/file_register.jsp

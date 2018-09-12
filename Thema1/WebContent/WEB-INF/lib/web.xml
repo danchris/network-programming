@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+
+  <display-name>Thema1</display-name>
+  <welcome-file-list>
+    <welcome-file>session.html</welcome-file>
+    <welcome-file>session.htm</welcome-file>
+    <welcome-file>servlet_login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    
+  <servlet>
+    
+    <description></description>
+    <display-name>Session</display-name>
+    <servlet-name>Session</servlet-name>
+    <servlet-class>Session</servlet-class>
+  </servlet>
+   <servlet>
+    <description></description>
+    <display-name>Addser</display-name>
+    <servlet-name>Addser</servlet-name>
+    <servlet-class>Addser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Addser</servlet-name>
+    <url-pattern>/Addser</url-pattern>
+  </servlet-mapping>
+     <servlet>
+    <description></description>
+    <display-name>Add</display-name>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/Add</url-pattern>
+  </servlet-mapping>
+</web-app>
+  
