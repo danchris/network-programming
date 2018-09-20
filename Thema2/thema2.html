@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style type="text/css">
-
-
-        </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script LANGUAGE="JavaScript">
@@ -14,8 +10,6 @@
                    name =  $("#name").val();
                    height = $("#height").val();
                    weight = $("#weight").val();
-
-
 
                    if (name.length != 0 && height.length !=0 && weight.length!=0){
                         console.log("yea");
@@ -34,32 +28,24 @@
                    else {
                     alert("Please complete the form");
                    }
+
+                   return false;
                 });
              });
-
-
         </script>
 
     </head>
 
     <body>
+        <form id="form">
+             <div style="text-align: left">BMI Calculator</div> <br>
+            <div class= "a">Name :<input type="text" step="any" name="name" id="name" class="in"/><span id = "err1"></span></div><br>
+            <div class="a">Height (m) :<input type="number" step="0.1" name="height" id="height" class="in"/><span id = "err2"></span></div><br>
+            <div class="a">Weight (kg) :<input type="number" step="any"name="weight" id="weight" class="in"/><span id = "err3"></span></div><br>
 
-    <div >
-
-
-            <form id="form">
-
-
-                 <div style="text-align: left">BMI Calculator</div> <br>
-                <div class= "a">Name :<input type="text" step="any" name="name" id="name" class="in"/><span id = "err1"></span></div><br>
-                <div class="a">Height (m) :<input type="number" step="0.1" name="height" id="height" class="in"/><span id = "err2"></span></div><br>
-                <div class="a">Weight (kg) :<input type="number" step="any"name="weight" id="weight" class="in"/><span id = "err3"></span></div><br>
-
-            </form>
-            <button type="submit" form="form" value="Save">Save</button>
-            <div id="res"></div>
-
-    </div>
+        </form>
+        <button type="submit" form="form" value="Save">Save</button>
+        <div id="res"></div>
     </body>
 
 </html>
