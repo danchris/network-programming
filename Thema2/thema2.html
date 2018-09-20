@@ -5,7 +5,7 @@
 
 
         </style>
-        <script src="jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script LANGUAGE="JavaScript">
 
@@ -21,8 +21,6 @@
                         console.log("yea");
                         tmp = height*height;
                         bmi = weight/tmp;
-                        a = weight%tmp;
-                        bmi += a;
                         if (bmi <= 18.5) res = "Underweight";
                         else if (bmi <= 25 ) res = "Normal Weight";
                         else if (bmi <= 30 ) res = "Overweight";
@@ -30,7 +28,7 @@
                         alert("Name: "+name+"\n"+
                             "Height: "+height+"\n"+
                             "Weight: "+weight+"\n"+
-                            "BMI: "+bmi+"\n"+
+                            "BMI: "+bmi.toFixed(1)+"\n"+
                              res);
                    }
                    else {
@@ -54,8 +52,8 @@
 
                  <div style="text-align: left">BMI Calculator</div> <br>
                 <div class= "a">Name :<input type="text" step="any" name="name" id="name" class="in"/><span id = "err1"></span></div><br>
-                <div class="a">Height :<input type="number" step="any" name="height" id="height" class="in"/><span id = "err2"></span></div><br>
-                <div class="a">Weight :<input type="number" step="any"name="weight" id="weight" class="in"/><span id = "err3"></span></div><br>
+                <div class="a">Height (m) :<input type="number" step="0.1" name="height" id="height" class="in"/><span id = "err2"></span></div><br>
+                <div class="a">Weight (kg) :<input type="number" step="any"name="weight" id="weight" class="in"/><span id = "err3"></span></div><br>
 
             </form>
             <button type="submit" form="form" value="Save">Save</button>
